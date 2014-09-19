@@ -16,3 +16,6 @@
 > Spring分为多个文件进行分别的配置，其中在servlet-name中如果没有指定init-param属性，
 那么系统自动寻找的spring配置文件为[servlet-name]-servlet.xml。
 [详细](http://blog.csdn.net/wendellup/article/details/8270239)
+
+> Spring加载resource时classpath*:与classpath:的区别
+[详细](http://blog.csdn.net/nba_2011/article/details/7989999)
