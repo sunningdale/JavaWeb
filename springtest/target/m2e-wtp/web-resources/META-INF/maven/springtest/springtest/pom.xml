@@ -25,6 +25,14 @@
       <type>jar</type>
       <scope>compile</scope>
     </dependency>
+    
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>3.0.5.RELEASE</version>
+      <type>jar</type>
+      <scope>compile</scope>
+    </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-asm</artifactId>
