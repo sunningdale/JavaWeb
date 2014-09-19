@@ -1,4 +1,6 @@
-##springmvc maven 构建springmvc
+#构建springmvc
+
+@[springmvc|maven]
 
 
 [@详细配置url](http://www.360doc.com/content/12/0223/11/834950_188852804.shtml)
@@ -6,3 +8,11 @@
 [@Eclipse deploy](http://zk1878.iteye.com/blog/1222330)
 
 [@eclipse build path功能总结](http://blog.csdn.net/cheney521/article/details/8526414)
+
+-----------------
+
+- **springmvc  web.xml**
+
+> Spring分为多个文件进行分别的配置，其中在servlet-name中如果没有指定init-param属性，
+那么系统自动寻找的spring配置文件为[servlet-name]-servlet.xml。
+[详细](http://blog.csdn.net/wendellup/article/details/8270239)
