@@ -25,6 +25,8 @@
 ----------------------------
 - **spring4.0**
 
+> Spring4新特性 [详细](http://jinnianshilongnian.iteye.com/blog/1989381)
+
 > 丢弃重口味的xml配置--spring4用groovy配置bean [详细](http://blog.csdn.net/kiwi_coder/article/details/17467965)
 
 
