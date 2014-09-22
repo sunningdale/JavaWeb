@@ -1,6 +1,5 @@
 #构建springmvc
-
-@[springmvc|maven]
+> springmvc > maven
 
 
 [@详细配置url](http://www.360doc.com/content/12/0223/11/834950_188852804.shtml)
