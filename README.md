@@ -9,6 +9,8 @@
 
 [@eclipse build path功能总结](http://blog.csdn.net/cheney521/article/details/8526414)
 
+
+
 -----------------
 
 - **springmvc  web.xml**
@@ -19,3 +21,10 @@
 
 > Spring加载resource时classpath*:与classpath:的区别
 [详细](http://blog.csdn.net/kkdelta/article/details/5507799)
+
+----------------------------
+- **spring4.0**
+
+> 丢弃重口味的xml配置--spring4用groovy配置bean [@详细](http://blog.csdn.net/kiwi_coder/article/details/17467965)
+
+
