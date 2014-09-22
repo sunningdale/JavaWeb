@@ -1,4 +1,4 @@
-#Do Study the skill as follow
+#Do study the skill as follow
 
 - *SpringMVC*
 
