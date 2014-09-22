@@ -25,6 +25,6 @@
 ----------------------------
 - **spring4.0**
 
-> 丢弃重口味的xml配置--spring4用groovy配置bean [@详细](http://blog.csdn.net/kiwi_coder/article/details/17467965)
+> 丢弃重口味的xml配置--spring4用groovy配置bean [详细](http://blog.csdn.net/kiwi_coder/article/details/17467965)
 
 
