@@ -1,10 +1,10 @@
 #Do Study the skill as follow
 
--- *SpringMVC*
+- *SpringMVC*
 
--- *JPA*
+- *JPA*
 
--- *engine X*
+- *engine X*
 
 
 
