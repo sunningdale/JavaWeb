@@ -45,7 +45,6 @@
 > Spring加载resource时classpath*:与classpath:的区别
 [详细](http://blog.csdn.net/kkdelta/article/details/5507799)
 
-> BeanNameUrlHandlerMappping & DefaultAnnotationHandlerMapping 
 
 --------------------
 - *xml tag*
@@ -56,6 +55,8 @@
 
 >  mvc:annotation-driven 
  标签[详细](http://www.cnblogs.com/penguin-panda/archive/2011/07/09/2101880.html)
+ 
+ > BeanNameUrlHandlerMappping & DefaultAnnotationHandlerMapping 
 
 
 ----------------------------
