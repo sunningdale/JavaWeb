@@ -56,7 +56,7 @@
 >  mvc:annotation-driven 
  标签[详细](http://www.cnblogs.com/penguin-panda/archive/2011/07/09/2101880.html)
  
- > BeanNameUrlHandlerMappping & DefaultAnnotationHandlerMapping 
+ > [BeanNameUrlHandlerMappping](http://blog.csdn.net/sunxing007/article/details/4584748) & DefaultAnnotationHandlerMapping 
 
 
 ----------------------------
