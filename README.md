@@ -43,6 +43,7 @@
 > Spring加载resource时classpath*:与classpath:的区别
 [详细](http://blog.csdn.net/kkdelta/article/details/5507799)
 
+
 --------------------
 - *xml tag*
 
@@ -50,7 +51,10 @@
  在xml配置了这个标签后，spring可以自动去扫描base-pack下面或者子包下面的java文件，如果扫描到有@Component @Controller@Service等这些注解的类，则把这些类注册为bean
 [详细](http://blog.csdn.net/chunqiuwei/article/details/16115135)
 
-> mvc:annotation-driven[详细](http://www.cnblogs.com/penguin-panda/archive/2011/07/09/2101880.html)
+>  mvc:annotation-driven 
+ 标签[详细](http://www.cnblogs.com/penguin-panda/archive/2011/07/09/2101880.html)
+
+
 ----------------------------
 - **spring4.0**
 
