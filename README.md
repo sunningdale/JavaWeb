@@ -45,6 +45,7 @@
 > Spring加载resource时classpath*:与classpath:的区别
 [详细](http://blog.csdn.net/kkdelta/article/details/5507799)
 
+> BeanNameUrlHandlerMappping & DefaultAnnotationHandlerMapping 
 
 --------------------
 - *xml tag*
