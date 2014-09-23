@@ -64,7 +64,7 @@
   [详细](http://www.cnblogs.com/penguin-panda/archive/2011/07/09/2101880.html)
 
  
- > [BeanNameUrlHandlerMappping](http://blog.csdn.net/sunxing007/article/details/4584748) & [DefaultAnnotationHandlerMapping](http://my.oschina.net/foggy/blog/55261)
+ > [BeanNameUrlHandlerMappping](http://blog.csdn.net/sunxing007/article/details/4584748) & [DefaultAnnotationHandlerMapping](http://my.oschina.net/foggy/blog/55261)   [DefaultAnnotationHandlerMapping1](http://www.cnblogs.com/siukun/archive/2011/12/06/2277647.html)
  
 
 
