@@ -18,6 +18,13 @@
 - *LoadBalance&Cluster* 
 
 
+----------------------------
+- **spring4.0**
+
+> Spring4新特性 [详细](http://jinnianshilongnian.iteye.com/blog/1989381)
+
+> 丢弃重口味的xml配置--spring4用groovy配置bean [详细](http://blog.csdn.net/kiwi_coder/article/details/17467965)
+
 
 
 #构建springmvc
@@ -29,7 +36,6 @@
 [@Eclipse deploy](http://zk1878.iteye.com/blog/1222330)
 
 [@eclipse build path功能总结](http://blog.csdn.net/cheney521/article/details/8526414)
-
 
 
 -----------------
@@ -61,12 +67,5 @@
  > [BeanNameUrlHandlerMappping](http://blog.csdn.net/sunxing007/article/details/4584748) & [DefaultAnnotationHandlerMapping](http://my.oschina.net/foggy/blog/55261)
  
 
-
-----------------------------
-- **spring4.0**
-
-> Spring4新特性 [详细](http://jinnianshilongnian.iteye.com/blog/1989381)
-
-> 丢弃重口味的xml配置--spring4用groovy配置bean [详细](http://blog.csdn.net/kiwi_coder/article/details/17467965)
 
 
