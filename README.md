@@ -54,9 +54,8 @@
 [详细](http://blog.csdn.net/chunqiuwei/article/details/16115135)
 
 >  mvc:annotation-driven 
- 会自动注册DefaultAnnotationHandlerMapping和AnnotationMethodHandlerAdapter两个实例
- 
- 标签[详细](http://www.cnblogs.com/penguin-panda/archive/2011/07/09/2101880.html)
+  会自动注册DefaultAnnotationHandlerMapping和AnnotationMethodHandlerAdapter两个实例
+  [详细](http://www.cnblogs.com/penguin-panda/archive/2011/07/09/2101880.html)
 
  
  > [BeanNameUrlHandlerMappping](http://blog.csdn.net/sunxing007/article/details/4584748) & DefaultAnnotationHandlerMapping 
