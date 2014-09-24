@@ -66,6 +66,8 @@
  
  > [BeanNameUrlHandlerMappping](http://blog.csdn.net/sunxing007/article/details/4584748) & [DefaultAnnotationHandlerMapping](http://my.oschina.net/foggy/blog/55261)   [DefaultAnnotationHandlerMapping1](http://www.cnblogs.com/siukun/archive/2011/12/06/2277647.html)
  
+ > [配置视图解析器ViewResolver](http://blog.csdn.net/sunxing007/article/details/4584979)
+ 
 
 
 
