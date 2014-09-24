@@ -68,6 +68,26 @@
  
  > [配置视图解析器ViewResolver](http://blog.csdn.net/sunxing007/article/details/4584979)
  
+ 	  <bean class="org.springframework.web.servlet.view.ResourceBundleViewResolver">
+	   <property name="basename" value="views" /> <property name="order" value="0" />
+	   </bean> 
+	   <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"> 
+	      <property name="prefix" value="/WEB-INF/mm/jsp/" /> 
+	      <property name="suffix" value=".jsp" />
+	   </bean> 
+	   <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer"> 
+	      <property name="templateLoaderPath"> 
+	      <value>/WEB-INF/mm/freemarker/</value> 
+	     </property>
+	   </bean> 
+	   
+	   
+	   上面为ResourceBundleViewResolver设置了order属性，用于定义顺序，在jsp处理之前
+	   这里使用了ResourceBundleViewResolver，还需要有它的配置文件，这里配置的名称是views.properties，需要把它放置在classpath的根下
+	   
+	   register.(class)=org.springframework.web.servlet.view.freemarker.FreeMarkerView register.url=register.ftl
+    这里的register，是spring mvc返回字符串的名称。url部分，要写freemarkerConfig中设置templateLoaderPath下的文件路径。
+ 
 
 
 
