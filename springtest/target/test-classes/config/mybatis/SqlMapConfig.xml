@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMapConfig PUBLIC "-//iBATIS.com//DTD SQL Map Config 2.0//EN"
+    "http://www.ibatis.com/dtd/sql-map-config-2.dtd">
+
+<sqlMapConfig>
+	<settings
+		lazyLoadingEnabled="true"   
+		cacheModelsEnabled="true"   
+		enhancementEnabled="false" 
+		errorTracingEnabled="true" 
+		maxRequests="128"          
+		maxSessions="64"          
+		maxTransactions="8"        
+		useStatementNamespaces="true" 
+	/>
+	
+<!-- 是否启用延迟加载机制 -->
+<!--是否启用缓存机制-->
+<!-- 是否启用字节码增强机制 -->
+<!-- 是否启用错误处理机制 -->
+<!-- 最大并发请求数 -->
+<!-- 最大Session数 -->
+<!-- 最大并发事务数 -->
+<!-- 是否启用名称空间 -->
+
+	<sqlMap resource="com/anyuan/dao/impl/map/manager_user_SqlMap.xml"/>	
+	<sqlMap resource="com/anyuan/dao/impl/map/news_SqlMap.xml"/>	
+</sqlMapConfig>
