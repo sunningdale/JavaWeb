@@ -1,6 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bean>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:context="http://www.springframework.org/schema/context"
+		xmlns:aop="http://www.springframework.org/schema/aop"
+		xmlns:tx="http://www.springframework.org/schema/tx"
+		xsi:schemaLocation="
+			http://www.springframework.org/schema/beans 
+			http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+			http://www.springframework.org/schema/context 
+			http://www.springframework.org/schema/context/spring-context-2.5.xsd  
+			http://www.springframework.org/schema/aop 
+			http://www.springframework.org/schema/aop/spring-aop-2.5.xsd 
+			http://www.springframework.org/schema/tx 
+			http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
 
 
 
-</bean>
+	<context:component-scan base-package="com.test.service">
+		<context:include-filter type="regex" expression=".*ServiceImpl" /> 
+	</context:component-scan>
+	
+	<context:component-scan base-package="com.test.dao">
+		<context:include-filter type="regex" expression=".*DaoImpl" /> 
+	</context:component-scan>
+	
+		<!-- 事务管理器 	 -->
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+	
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+		<property name="url" value="jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true&amp;zeroDateTimeBehavior=convertToNull"/> 
+		<property name="username" value="root"/>
+		<property name="password" value="123456"/>
+		<property name="initialSize" value="5" />
+		<property name="maxActive" value="80" />
+		<property name="maxIdle" value="30" />
+		<property name="maxWait" value="1000" />
+		<property name="poolPreparedStatements" value="true" />
+		<property name="defaultAutoCommit" value="false" />
+	</bean>
+	
+	<bean id="sqlMapClient" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+		<!-- <property name="configLocation" value="WEB-INF/SqlMapConfig.xml"/> -->
+		<property name="configLocation" value="classpath:/config/mybatis/SqlMapConfig.xml"></property>
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+	
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="*" timeout="600"  />
+			<tx:method name="do*" timeout="600" />
+			<tx:method name="find*" timeout="600" />
+		</tx:attributes>
+	</tx:advice>
+	
+	<aop:config>
+		<aop:pointcut id="businessServiceOperation"
+			expression="execution(* com.test.service.impl.*.*(..))" />
+		<aop:advisor advice-ref="txAdvice"
+			pointcut-ref="businessServiceOperation" />
+	</aop:config>
+</beans>
